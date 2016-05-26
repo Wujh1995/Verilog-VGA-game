@@ -1,0 +1,39 @@
+# clock pin for Basys2 Board
+NET "mclk" LOC = "B8"; # Bank = 0, Signal name = MCLK
+NET "mclk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# Pin assignment for VGA
+NET "HSYNC"   LOC = "J14"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = HSYNC
+NET "VSYNC"   LOC = "K13"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = VSYNC
+
+NET "to_left"   LOC = "A7"  ; 
+NET "to_right"   LOC = "G12"  ; 
+
+NET "bar_move_speed<0>"   LOC = "P11"  ; 
+NET "bar_move_speed<1>"   LOC = "L3"  ; 
+NET "bar_move_speed<2>"   LOC = "K3"  ; 
+NET "bar_move_speed<3>"   LOC = "B4"  ; 
+
+NET "OutRed<2>"  LOC = "F13"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = RED2
+NET "OutRed<1>"  LOC = "D13"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = RED1
+NET "OutRed<0>"  LOC = "C14"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = RED0
+NET "OutGreen<2>"  LOC = "G14"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = GRN2
+NET "OutGreen<1>"  LOC = "G13"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = GRN1 
+NET "OutGreen<0>"  LOC = "F14"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = GRN0 
+NET "OutBlue<2>"  LOC = "J13"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = BLU2
+NET "OutBlue<1>"  LOC = "H13"  ; #| DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = BLU1 
+
+NET "seg_LED<0>"   LOC = "L14"  ; 
+NET "seg_LED<1>"   LOC = "H12"  ; 
+NET "seg_LED<2>"   LOC = "N14"  ; 
+NET "seg_LED<3>"   LOC = "N11"  ; 
+NET "seg_LED<4>"   LOC = "P12"  ; 
+NET "seg_LED<5>"   LOC = "L13"  ; 
+NET "seg_LED<6>"   LOC = "M12"  ; 
+
+NET "seg_select<0>"   LOC = "K14"  ; 
+NET "seg_select<1>"   LOC = "M13"  ; 
+NET "seg_select<2>"   LOC = "J12"  ; 
+NET "seg_select<3>"   LOC = "F12"  ; 
+
+NET "rst"   LOC = "M4"  ; 
