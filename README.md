@@ -5,6 +5,10 @@ A simple game written in Verilog HDL language and display on the VGA screen.
 在VGA上显示小球和挡板，Basys2开发板的BTN3和BTN0分别控制挡板左右移动，输的分数会在数码管上显示。
 速度可以控制，通过SW3~SW0控制，一共16档，最低的是静止档。
 
+SBgame.v是顶层文件
+sbgame.bit是最后生成的比特流文件，可以直接烧到板子上，如果有Basys2开发板的可以直接烧。
+Basys2Bist.ucf是引脚约束文件，是板子例程里的约束文件删删改改出来的，连名字都懒得改...
+
 这是集成电路设计实验的作业，搞了一两天吧，也挺麻烦的，毕竟是第一次接触。
 有几个要注意的点：
  - 用的是 Digilent 公司的 Basys2 开发板
